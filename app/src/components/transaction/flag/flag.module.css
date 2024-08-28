@@ -1,0 +1,45 @@
+.flags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.flag-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  width: 28px;
+  border-radius: 100%;
+  transition: background var(--animation-time-fast);
+  cursor: pointer;
+}
+
+.flag-option:hover {
+  background-color: var(--Shadow-Dark);
+}
+
+.flag-option.flag-red:hover {
+  background-color: var(--Ynab-Red-Translucent);
+}
+
+.flag-option.flag-orange:hover {
+  background-color: var(--Ynab-Orange-Translucent);
+}
+
+.flag-option.flag-yellow:hover {
+  background-color: var(--Ynab-Yellow-Translucent);
+}
+
+.flag-option.flag-green:hover {
+  background-color: var(--Ynab-Green-Translucent);
+}
+
+.flag-option.flag-blue:hover {
+  background-color: var(--Ynab-Blue-Translucent);
+}
+
+.flag-option.flag-purple:hover {
+  background-color: var(--Ynab-Purple-Translucent);
+}

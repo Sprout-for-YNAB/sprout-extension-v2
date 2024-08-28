@@ -1,0 +1,25 @@
+.item {
+  border-bottom: 1px solid var(--Border);
+}
+
+.item:last-of-type {
+  border-bottom: none;
+}
+
+.link {
+  display: block;
+  padding: 2rem 1rem;
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  transition: background var(--animation-time-fast);
+}
+
+.link:hover:not(.link.skeleton) {
+  background-color: var(--Border);
+  text-decoration: none;
+}
+
+.skeleton-text div {
+  height: 20px;
+}

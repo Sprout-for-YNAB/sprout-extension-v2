@@ -1,0 +1,13 @@
+.spinner {
+  opacity: 0;
+  animation: spinner-reveal 0.1s linear 2s;
+}
+
+@keyframes spinner-reveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

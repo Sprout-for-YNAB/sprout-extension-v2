@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main {
+  padding: 1rem;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.name {
+  order: 1;
+  font-size: 20px;
+}
+
+.back {
+  order: 0;
+}
+
+.settings {
+  order: 2;
+}
+
+.back,
+.settings {
+  height: 32px;
+  width: 32px;
+  padding: 0;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 1rem;
+}

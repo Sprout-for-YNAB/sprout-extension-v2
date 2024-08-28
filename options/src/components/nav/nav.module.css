@@ -1,0 +1,18 @@
+.nav {
+  background-color: var(--Background-Secondary);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.link {
+  display: block;
+  padding: 1rem;
+  transition: background var(--animation-time-fast);
+}
+
+.link:hover {
+  background-color: var(--Border);
+  text-decoration: none;
+}

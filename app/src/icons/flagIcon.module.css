@@ -1,0 +1,55 @@
+.flag path {
+  stroke: var(--Text-Hint);
+}
+
+.flag.red path:first-child {
+  stroke: var(--Ynab-Red);
+}
+
+.flag.orange path:first-child {
+  stroke: var(--Ynab-Orange);
+}
+
+.flag.yellow path:first-child {
+  stroke: var(--Ynab-Yellow);
+}
+
+.flag.green path:first-child {
+  stroke: var(--Ynab-Green);
+}
+
+.flag.blue path:first-child {
+  stroke: var(--Ynab-Blue);
+}
+
+.flag.purple path:first-child {
+  stroke: var(--Ynab-Purple);
+}
+
+.flag.none.filled path {
+  stroke: var(--Text-Primary);
+}
+
+.flag.red.filled path:first-child {
+  fill: var(--Ynab-Red);
+}
+
+.flag.orange.filled path:first-child {
+  fill: var(--Ynab-Orange);
+}
+
+.flag.yellow.filled path:first-child {
+  fill: var(--Ynab-Yellow);
+}
+
+.flag.green.filled path:first-child {
+  fill: var(--Ynab-Green);
+}
+
+.flag.blue.filled path:first-child {
+  fill: var(--Ynab-Blue);
+}
+
+.flag.purple.filled path:first-child {
+  fill: var(--Ynab-Purple);
+}

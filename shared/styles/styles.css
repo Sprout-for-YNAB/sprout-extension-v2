@@ -1,0 +1,312 @@
+body,
+a {
+  color: var(--Text-Primary);
+}
+
+body {
+  background-color: var(--Background-Primary);
+  font-family: "Inter Variable", sans-serif;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  margin: 1.25rem 0;
+}
+
+a {
+  font-weight: 700;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+small {
+  display: block;
+  font-size: 14px;
+  color: var(--Text-Secondary);
+}
+
+button,
+.button,
+input[type="button"] {
+  display: inline-block;
+  padding: 12px 24px 13px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.03rem;
+  white-space: nowrap;
+  background-color: var(--Button-Primary-Default);
+  box-shadow:
+    0px 1px 0px 0px var(--Shadow-Dark),
+    0px -2px 2px 1px var(--Shadow-Dark) inset,
+    0px 1px 1px 0px var(--Shadow-Light) inset;
+  color: var(--Button-Primary-Text);
+  transition:
+    background var(--animation-time-fast),
+    box-shadow var(--animation-time-fast),
+    color var(--animation-time-fast),
+    padding var(--animation-time-fast);
+  text-align: center;
+}
+
+button:hover:not(button:disabled),
+.button:hover:not(.button:disabled) {
+  background-color: var(--Button-Primary-Hover);
+}
+
+.button:hover {
+  text-decoration: none;
+}
+
+button:active:not(button:disabled),
+.button:active:not(.button:disabled) {
+  padding-top: 14px;
+  padding-bottom: 11px;
+  color: var(--Button-Primary-Disabled);
+  background-color: var(--Button-Primary-Active);
+  box-shadow: 0px 6px 3px 1px var(--Shadow-Dark) inset;
+}
+
+button:disabled,
+.button:disabled {
+  cursor: not-allowed;
+  color: var(--Text-Disabled);
+  background: var(--Button-Primary-Disabled);
+  box-shadow:
+    0px 0px 2px 1px var(--Shadow-Dark) inset,
+    0px 1px 1px 0px var(--Shadow-Light) inset;
+}
+
+button.secondary,
+.button.secondary,
+input[type="button"] {
+  padding: 12px 24px;
+  background-color: var(--Button-Secondary-Default);
+  color: var(--Text-Primary);
+  box-shadow: none;
+}
+
+button.secondary:hover:not(button.secondary:disabled),
+.button.secondary:hover:not(.button.secondary:disabled),
+input[type="button"]:hover:not(input[type="button"]:disabled) {
+  background-color: var(--Button-Secondary-Hover);
+}
+
+button.secondary:active:not(button.secondary:disabled),
+.button.secondary:active:not(.button.secondary:disabled),
+input[type="button"]:active:not(input[type="button"]:disabled) {
+  padding-top: 14px;
+  padding-bottom: 10px;
+  background-color: var(--Button-Secondary-Active);
+  color: var(--Text-Primary);
+  box-shadow: 0px 6px 3px 1px var(--Shadow-Dark) inset;
+}
+
+button.secondary:disabled,
+.button.secondary:disabled,
+input[type="button"]:disabled {
+  color: var(--Text-Disabled);
+}
+
+button.icon,
+.button.icon {
+  padding: 0.25rem;
+  background-color: transparent;
+  color: var(--Text-Primary);
+  border-radius: 100%;
+}
+
+button.icon:active:not(button.icon:disabled),
+.button.icon:active:not(.button.icon:disabled) {
+  padding-top: 6px;
+  padding-bottom: 0px;
+  box-shadow: 0px 2px 1px 1px var(--Shadow-Dark) inset;
+}
+
+button.icon > svg,
+.button.icon > svg {
+  max-height: 24px;
+  max-width: 24px;
+}
+
+.toggle-slider {
+  cursor: pointer;
+  height: 28px;
+  width: 43px;
+  display: flex;
+  align-items: center;
+  border-radius: 24px;
+  transition:
+    background-color var(--animation-time-fast),
+    left var(--animation-time-fast);
+  background-color: var(--Toggle-Background);
+  box-shadow: 0px 0px 4px 0px var(--Shadow-Dark) inset;
+}
+
+.toggle-slider::before {
+  height: 24px;
+  width: 24px;
+  border-radius: 100%;
+  margin-left: 2px;
+  content: "";
+  transition:
+    transform var(--animation-time-fast),
+    left var(--animation-time-fast);
+  background-color: var(--Toggle-Switch);
+  box-shadow: 0px 1px 2px 0px var(--Shadow-Dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--Toggle-Switch-Text);
+}
+
+.toggle-checkbox {
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+label,
+legend {
+  font-weight: 700;
+}
+
+form,
+input[type="text"],
+input[type="number"],
+input[type="date"] {
+  width: 100%;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="checkbox"] + .toggle-checkbox,
+select {
+  border: 1px solid var(--Input-Border);
+}
+
+input[type="text"],
+input[type="date"] {
+  background-color: var(--Background-Secondary);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="checkbox"]:checked + .toggle-slider {
+  background-color: var(--Green);
+}
+
+input[type="checkbox"]:checked + .toggle-slider::before {
+  transform: translateX(15px);
+}
+
+input[type="checkbox"] + .toggle-checkbox * {
+  opacity: 0;
+  height: 20px;
+  width: 20px;
+  color: var(--Background-Secondary);
+}
+
+input[type="checkbox"]:checked + .toggle-checkbox {
+  background-color: var(--Button-Primary-Default);
+}
+
+input[type="checkbox"]:checked + .toggle-checkbox * {
+  opacity: 1;
+}
+
+input::placeholder {
+  color: var(--Text-Hint);
+}
+
+input {
+  font-weight: 400;
+}
+
+select {
+  appearance: auto;
+  padding: 0.5rem;
+  border: 1px solid var(--Text-Secondary);
+  border-radius: 4px;
+  background-color: var(--Background-Secondary);
+}
+
+.form__row {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.form__grid {
+  display: grid;
+  grid-template-columns: 140px auto 43px;
+  text-align: left;
+  margin-top: 1rem;
+  gap: 0.75rem;
+}
+
+.danger,
+input[type="button"].danger {
+  color: var(--Red);
+}
+
+.icon__big {
+  height: 96px;
+}
+
+.skeleton {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.skeleton-animation {
+  animation-name: skeleton__animate;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes skeleton__animate {
+  0% {
+    background-color: var(--Skeleton-Light);
+  }
+  100% {
+    background-color: var(--Skeleton-Dark);
+  }
+}

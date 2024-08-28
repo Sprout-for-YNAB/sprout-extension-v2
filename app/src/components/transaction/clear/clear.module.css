@@ -1,0 +1,9 @@
+.clear {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.slider {
+  margin-top: 6px;
+}

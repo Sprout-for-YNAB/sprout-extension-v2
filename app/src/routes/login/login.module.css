@@ -1,0 +1,18 @@
+.main {
+  padding: 1rem 4rem;
+}
+
+.paragraph {
+  margin-bottom: 0;
+}
+
+.button,
+.button:active:not(.button:disabled) {
+  padding-left: 3.25rem;
+  padding-right: 3.25rem;
+  margin-top: 1rem;
+}
+
+.notice {
+  margin-top: 1rem;
+}

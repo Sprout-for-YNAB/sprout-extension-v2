@@ -1,0 +1,89 @@
+.suggestion-box {
+  position: absolute;
+  width: 100%;
+  overflow-y: auto;
+  background-color: var(--Background-Secondary);
+  border: 1px solid var(--Input-Border);
+  border-radius: 4px;
+  max-height: 210px;
+  z-index: 1;
+  animation-name: suggestion__animate;
+  animation-duration: var(--animation-time-slow);
+  animation-fill-mode: both;
+  box-shadow: 0px 4px 4px 0px var(--Shadow-Dark);
+}
+
+.suggestion-box.fullscreen {
+  max-height: 527px;
+  box-shadow: none;
+  width: 100vw;
+  margin-left: -1rem;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.suggestion,
+.suggestion-group__header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0.5rem;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.suggestion {
+  cursor: pointer;
+  height: 32px;
+  color: var(--Text-Secondary);
+}
+
+.suggestion-box.fullscreen .suggestion-group__header {
+  padding: 0 1rem;
+}
+
+.suggestion-box.fullscreen .suggestion {
+  padding: 0 1.5rem;
+}
+
+.suggestion > span:first-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.suggestion > span:last-child {
+  margin-left: 0.75rem;
+  text-align: right;
+}
+
+.suggestion:hover:not(.suggestion__no-highlight:hover),
+.suggestion__highlighted {
+  background-color: var(--Button-Secondary-Hover);
+  color: var(--Text-Primary);
+}
+
+.suggestion__no-highlight {
+  font-weight: 700;
+}
+
+.suggestion-group__header {
+  height: 32px;
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.icon {
+  height: 16px;
+}
+
+@keyframes suggestion__animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

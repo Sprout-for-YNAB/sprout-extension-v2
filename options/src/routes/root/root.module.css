@@ -1,0 +1,16 @@
+.container {
+  max-width: 1024px;
+  margin: auto;
+  padding-bottom: 2rem;
+}
+
+.header {
+  font-size: 36px;
+  margin: 2rem 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 3rem;
+}

@@ -1,0 +1,180 @@
+:root {
+  color-scheme: light dark;
+  --Light-Theme-Background-Primary: #f6f6f6;
+  --Light-Theme-Background-Secondary: white;
+  --Light-Theme-Text-Primary: #212121;
+  --Light-Theme-Text-Secondary: #424242;
+  --Light-Theme-Text-Disabled: #999;
+  --Light-Theme-Text-Hint: #aaa;
+  --Light-Theme-Button-Primary-Default: #404040;
+  --Light-Theme-Button-Primary-Hover: #333;
+  --Light-Theme-Button-Primary-Active: #262626;
+  --Light-Theme-Button-Primary-Disabled: #ddd;
+  --Light-Theme-Button-Primary-Text: #dedede;
+  --Light-Theme-Button-Secondary-Default: #ddd;
+  --Light-Theme-Button-Secondary-Hover: #ccc;
+  --Light-Theme-Button-Secondary-Active: #999;
+  --Light-Theme-Toggle-Background: #ccc;
+  --Light-Theme-Toggle-Switch: #f6f6f6;
+  --Light-Theme-Skeleton-Light: #eee;
+  --Light-Theme-Skeleton-Dark: #ddd;
+  --Light-Theme-Input-Border: #ccc;
+  --Light-Theme-Border: #eee;
+  --Light-Theme-Red: #b21919;
+  --Light-Theme-Green: #0b7f0b;
+
+  --Dark-Theme-Background-Primary: #101010;
+  --Dark-Theme-Background-Secondary: #212121;
+  --Dark-Theme-Text-Primary: #dedede;
+  --Dark-Theme-Text-Secondary: #bdbdbd;
+  --Dark-Theme-Text-Disabled: #999;
+  --Dark-Theme-Text-Hint: #aaaaaa;
+  --Dark-Theme-Button-Primary-Default: #f6f6f6;
+  --Dark-Theme-Button-Primary-Hover: #e6e6e6;
+  --Dark-Theme-Button-Primary-Active: #dedede;
+  --Dark-Theme-Button-Primary-Disabled: #666;
+  --Dark-Theme-Button-Primary-Text: #212121;
+  --Dark-Theme-Button-Secondary-Default: #313131;
+  --Dark-Theme-Button-Secondary-Hover: #525252;
+  --Dark-Theme-Button-Secondary-Active: #121212;
+  --Dark-Theme-Toggle-Background: #808080;
+  --Dark-Theme-Toggle-Switch: #dedede;
+  --Dark-Theme-Skeleton-Light: #111;
+  --Dark-Theme-Skeleton-Dark: #222;
+  --Dark-Theme-Input-Border: #333;
+  --Dark-Theme-Border: #444;
+  --Dark-Theme-Red: #ff7575;
+  --Dark-Theme-Green: #18aa18;
+
+  --Toggle-Switch-Text: #212121;
+  --Shadow-Dark: rgba(0, 0, 0, 0.33);
+  --Shadow-Light: rgba(255, 255, 255, 0.33);
+  --animation-time-fast: 0.1s;
+  --animation-time-slow: 0.2s;
+
+  --Ynab-Red: #ff3b30;
+  --Ynab-Orange: #ff9500;
+  --Ynab-Yellow: #ffcc00;
+  --Ynab-Green: #34c759;
+  --Ynab-Blue: #5ac8fa;
+  --Ynab-Purple: #af52de;
+
+  --Ynab-Red-Translucent: #ff3b3040;
+  --Ynab-Orange-Translucent: #ff950040;
+  --Ynab-Yellow-Translucent: #ffcc0040;
+  --Ynab-Green-Translucent: #34c75940;
+  --Ynab-Blue-Translucent: #5ac8fa40;
+  --Ynab-Purple-Translucent: #af52de40;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --Background-Primary: var(--Light-Theme-Background-Primary);
+    --Background-Secondary: var(--Light-Theme-Background-Secondary);
+    --Text-Primary: var(--Light-Theme-Text-Primary);
+    --Text-Secondary: var(--Light-Theme-Text-Secondary);
+    --Text-Disabled: var(--Light-Theme-Text-Disabled);
+    --Text-Hint: var(--Light-Theme-Text-Hint);
+    --Button-Primary-Default: var(--Light-Theme-Button-Primary-Default);
+    --Button-Primary-Hover: var(--Light-Theme-Button-Primary-Hover);
+    --Button-Primary-Active: var(--Light-Theme-Button-Primary-Active);
+    --Button-Primary-Disabled: var(--Light-Theme-Button-Primary-Disabled);
+    --Button-Primary-Text: var(--Light-Theme-Button-Primary-Text);
+    --Button-Secondary-Default: var(--Light-Theme-Button-Secondary-Default);
+    --Button-Secondary-Hover: var(--Light-Theme-Button-Secondary-Hover);
+    --Button-Secondary-Active: var(--Light-Theme-Button-Secondary-Active);
+    --Toggle-Background: var(--Light-Theme-Toggle-Background);
+    --Toggle-Switch: var(--Light-Theme-Toggle-Switch);
+    --Skeleton-Light: var(--Light-Theme-Skeleton-Light);
+    --Skeleton-Dark: var(--Light-Theme-Skeleton-Dark);
+    --Input-Border: var(--Light-Theme-Input-Border);
+    --Border: var(--Light-Theme-Border);
+    --Red: var(--Light-Theme-Red);
+    --Green: var(--Light-Theme-Green);
+  }
+
+  :root .dark-theme {
+    --Background-Primary: var(--Dark-Theme-Background-Primary);
+    --Background-Secondary: var(--Dark-Theme-Background-Secondary);
+    --Text-Primary: var(--Dark-Theme-Text-Primary);
+    --Text-Secondary: var(--Dark-Theme-Text-Secondary);
+    --Text-Disabled: var(--Dark-Theme-Text-Disabled);
+    --Text-Hint: var(--Dark-Theme-Text-Hint);
+    --Button-Primary-Default: var(--Dark-Theme-Button-Primary-Default);
+    --Button-Primary-Hover: var(--Dark-Theme-Button-Primary-Hover);
+    --Button-Primary-Active: var(--Dark-Theme-Button-Primary-Active);
+    --Button-Primary-Disabled: var(--Dark-Theme-Button-Primary-Disabled);
+    --Button-Secondary-Default: var(--Dark-Theme-Button-Secondary-Default);
+    --Button-Secondary-Hover: var(--Dark-Theme-Button-Secondary-Hover);
+    --Button-Secondary-Active: var(--Dark-Theme-Button-Secondary-Active);
+    --Button-Primary-Text: var(--Dark-Theme-Button-Primary-Text);
+    --Toggle-Background: var(--Dark-Theme-Toggle-Background);
+    --Toggle-Switch: var(--Dark-Theme-Toggle-Switch);
+    --Skeleton-Light: var(--Dark-Theme-Skeleton-Light);
+    --Skeleton-Dark: var(--Dark-Theme-Skeleton-Dark);
+    --Input-Border: var(--Dark-Theme-Input-Border);
+    --Border: var(--Dark-Theme-Border);
+    --Red: var(--Dark-Theme-Red);
+    --Green: var(--Dark-Theme-Green);
+  }
+
+  :root .dark-theme input {
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --Background-Primary: var(--Dark-Theme-Background-Primary);
+    --Background-Secondary: var(--Dark-Theme-Background-Secondary);
+    --Text-Primary: var(--Dark-Theme-Text-Primary);
+    --Text-Secondary: var(--Dark-Theme-Text-Secondary);
+    --Text-Disabled: var(--Dark-Theme-Text-Disabled);
+    --Text-Hint: var(--Dark-Theme-Text-Hint);
+    --Button-Primary-Default: var(--Dark-Theme-Button-Primary-Default);
+    --Button-Primary-Hover: var(--Dark-Theme-Button-Primary-Hover);
+    --Button-Primary-Active: var(--Dark-Theme-Button-Primary-Active);
+    --Button-Primary-Disabled: var(--Dark-Theme-Button-Primary-Disabled);
+    --Button-Secondary-Default: var(--Dark-Theme-Button-Secondary-Default);
+    --Button-Secondary-Hover: var(--Dark-Theme-Button-Secondary-Hover);
+    --Button-Secondary-Active: var(--Dark-Theme-Button-Secondary-Active);
+    --Button-Primary-Text: var(--Dark-Theme-Button-Primary-Text);
+    --Toggle-Background: var(--Dark-Theme-Toggle-Background);
+    --Toggle-Switch: var(--Dark-Theme-Toggle-Switch);
+    --Skeleton-Light: var(--Dark-Theme-Skeleton-Light);
+    --Skeleton-Dark: var(--Dark-Theme-Skeleton-Dark);
+    --Input-Border: var(--Dark-Theme-Input-Border);
+    --Border: var(--Dark-Theme-Border);
+    --Red: var(--Dark-Theme-Red);
+    --Green: var(--Dark-Theme-Green);
+  }
+
+  :root .light-theme {
+    --Background-Primary: var(--Light-Theme-Background-Primary);
+    --Background-Secondary: var(--Light-Theme-Background-Secondary);
+    --Text-Primary: var(--Light-Theme-Text-Primary);
+    --Text-Secondary: var(--Light-Theme-Text-Secondary);
+    --Text-Disabled: var(--Light-Theme-Text-Disabled);
+    --Text-Hint: var(--Light-Theme-Text-Hint);
+    --Button-Primary-Default: var(--Light-Theme-Button-Primary-Default);
+    --Button-Primary-Hover: var(--Light-Theme-Button-Primary-Hover);
+    --Button-Primary-Active: var(--Light-Theme-Button-Primary-Active);
+    --Button-Primary-Disabled: var(--Light-Theme-Button-Primary-Disabled);
+    --Button-Primary-Text: var(--Light-Theme-Button-Primary-Text);
+    --Button-Secondary-Default: var(--Light-Theme-Button-Secondary-Default);
+    --Button-Secondary-Hover: var(--Light-Theme-Button-Secondary-Hover);
+    --Button-Secondary-Active: var(--Light-Theme-Button-Secondary-Active);
+    --Toggle-Background: var(--Light-Theme-Toggle-Background);
+    --Toggle-Switch: var(--Light-Theme-Toggle-Switch);
+    --Skeleton-Light: var(--Light-Theme-Skeleton-Light);
+    --Skeleton-Dark: var(--Light-Theme-Skeleton-Dark);
+    --Input-Border: var(--Light-Theme-Input-Border);
+    --Border: var(--Light-Theme-Border);
+    --Red: var(--Light-Theme-Red);
+    --Green: var(--Light-Theme-Green);
+  }
+
+  :root .light-theme input {
+    color-scheme: light;
+  }
+}

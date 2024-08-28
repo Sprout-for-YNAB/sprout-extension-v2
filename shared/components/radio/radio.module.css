@@ -1,0 +1,39 @@
+.container {
+  cursor: pointer;
+  margin: 0.5rem 0;
+}
+
+.radio {
+  height: 24px;
+  width: 24px;
+  background: transparent;
+  border-radius: 100%;
+  border: 2px solid var(--Input-Border);
+  transition: 0.1s all;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.radio::before {
+  display: block;
+  opacity: 0;
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  transition: 0.1s all;
+  background: var(--Text-Primary);
+}
+
+.radio:checked {
+  border: 3px solid var(--Text-Primary);
+}
+
+.radio:checked::before {
+  opacity: 1;
+}
+
+.label {
+  margin-left: 0.5rem;
+}

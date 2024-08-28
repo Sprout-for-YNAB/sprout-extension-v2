@@ -1,0 +1,11 @@
+.radios {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  margin: auto;
+  background: var(--Background-Secondary);
+  padding: 1rem;
+  border-radius: 16px;
+  margin-top: 0.5rem;
+}

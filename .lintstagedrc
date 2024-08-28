@@ -1,0 +1,4 @@
+{
+  "*.ts*": ["npm run lint", "prettier --write --ignore-unknown"],
+  "*.css": ["prettier --write --ignore-unknown"]
+}

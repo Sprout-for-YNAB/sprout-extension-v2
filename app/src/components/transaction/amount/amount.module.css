@@ -1,0 +1,63 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  font-size: 64px;
+  font-weight: 700;
+  color: var(--Red);
+  transition: color var(--animation-time-fast);
+}
+
+.inflow .input {
+  color: var(--Green);
+}
+
+.flow-switch {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--Toggle-Background);
+  border-radius: 24px;
+  height: 32px;
+  transition:
+    background-color var(--animation-time-fast),
+    left var(--animation-time-fast);
+  box-shadow: 0px 0px 4px 0px var(--Shadow-Dark) inset;
+  color: var(--Toggle-Switch-Text);
+}
+
+.flow-switch::before {
+  content: "";
+  height: 28px;
+  width: 116px;
+  border-radius: 24px;
+  transition:
+    transform var(--animation-time-fast),
+    left var(--animation-time-fast),
+    width var(--animation-time-fast);
+  background-color: var(--Toggle-Switch);
+  box-shadow: 0px 1px 2px 0px var(--Shadow-Dark);
+  position: absolute;
+  left: 2px;
+}
+
+.inflow .flow-switch::before {
+  width: 100px;
+  left: 118px;
+}
+
+.flow-switch label {
+  font-weight: 700;
+  z-index: 1;
+  padding: 0.25rem 1.25rem;
+  cursor: pointer;
+}
+
+.flow-switch input {
+  width: 0px;
+  height: 0px;
+}

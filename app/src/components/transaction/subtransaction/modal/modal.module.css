@@ -1,0 +1,64 @@
+.select-list,
+.input-list {
+  max-height: 400px;
+  overflow: auto;
+  text-align: left;
+}
+
+.select-list {
+  border-radius: 8px;
+  border: 1px solid var(--Input-Border);
+}
+
+.item__label,
+.item-group__header {
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem;
+  width: 100%;
+  color: var(--Text-Secondary);
+  height: 32px;
+}
+
+.item__label {
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.item__label-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-left: 0.5rem;
+  white-space: nowrap;
+}
+
+.item__label-text > span:first-child {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 250px;
+}
+
+.item__label-text > span:last-child {
+  margin-left: 0.5rem;
+}
+
+.item-group__header {
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+
+.item__checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.remaining {
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}

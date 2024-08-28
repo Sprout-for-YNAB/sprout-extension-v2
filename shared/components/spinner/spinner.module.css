@@ -1,0 +1,34 @@
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+}
+
+.symbol {
+  height: 48px;
+  width: 48px;
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: cubic-bezier(0.3, 0.65, 0.65, 0.3);
+  animation-iteration-count: infinite;
+}
+
+.symbol.big {
+  height: 96px;
+  width: 96px;
+}
+
+.message {
+  margin: 0.5rem 0;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateY(90deg);
+  }
+  to {
+    transform: rotateY(-90deg);
+  }
+}

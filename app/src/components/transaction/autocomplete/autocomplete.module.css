@@ -1,0 +1,45 @@
+.row {
+  background-color: transparent;
+  transition:
+    transform var(--animation-time-slow),
+    background var(--animation-time-slow);
+}
+
+.subtransaction {
+  margin-top: 0.25rem;
+}
+
+.input:focus + .button,
+.input:hover + .button,
+.button:hover {
+  opacity: 1;
+}
+
+.button {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 2px;
+  top: 22px;
+  height: 32px;
+  width: 32px;
+  background-color: var(--Background-Secondary);
+  transition: opacity var(--animation-time-fast);
+}
+
+.fullscreen {
+  background-color: var(--Background-Primary);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+  margin-top: 0;
+  margin-left: -1rem;
+  padding: 1rem;
+}
+
+.fullscreen .button {
+  top: 38px;
+  right: 18px;
+}

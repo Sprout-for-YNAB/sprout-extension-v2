@@ -1,0 +1,17 @@
+.row {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.description {
+  margin-right: auto;
+  padding-right: 2rem;
+  max-width: 633px;
+}
+
+.description label {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  display: block;
+}

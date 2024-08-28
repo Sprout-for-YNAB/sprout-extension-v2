@@ -1,0 +1,88 @@
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: var(--Shadow-Dark);
+  backdrop-filter: blur(8px);
+  z-index: 2;
+  animation-name: modal-backdrop__animate;
+  animation-duration: var(--animation-time-slow);
+  animation-fill-mode: both;
+}
+
+.modal {
+  background-color: var(--Background-Secondary);
+  border-radius: 24px 24px 0px 0px;
+  padding: 1rem;
+  box-shadow: 0px 4px 12px var(--Shadow-Dark);
+  width: 100%;
+  animation-name: modal__animate;
+  animation-duration: var(--animation-time-slow);
+  animation-fill-mode: both;
+  max-width: 600px;
+  text-align: center;
+}
+
+.body {
+  margin: 1rem 0;
+}
+
+.footer {
+  display: flex;
+}
+
+.footer > * {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 0 0.5rem;
+}
+
+.footer > *:first-child {
+  margin-left: 0;
+}
+
+.footer > *:last-child {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 500px) {
+  .backdrop {
+    align-items: center;
+  }
+
+  .modal {
+    border-radius: 16px;
+    padding: 2rem;
+  }
+
+  .body {
+    margin: 2rem 0;
+  }
+
+  .footer > * {
+    margin: 0 1rem;
+  }
+}
+
+@keyframes modal-backdrop__animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes modal__animate {
+  0% {
+    transform: translateY(600px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
